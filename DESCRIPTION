@@ -1,7 +1,7 @@
 Package: raybevel
 Type: Package
 Title: Generates Polygon Straight Skeletons and 3D Bevels
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     person("Tyler", "Morgan-Wall", email = "tylermw@gmail.com",
     role = c("aut", "cph", "cre"), comment = c(ORCID = "0000-0002-3131-3814"))
@@ -21,8 +21,8 @@ URL: https://www.raybevel.com,
         https://github.com/tylermorganwall/raybevel/
 BugReports: https://github.com/tylermorganwall/raybevel/issues
 NeedsCompilation: yes
-Packaged: 2024-02-23 17:53:11 UTC; tyler
+Packaged: 2024-02-28 03:34:43 UTC; tyler
 Author: Tyler Morgan-Wall [aut, cph, cre]
     (<https://orcid.org/0000-0002-3131-3814>)
 Repository: CRAN
-Date/Publication: 2024-02-26 19:00:02 UTC
+Date/Publication: 2024-02-28 10:30:02 UTC

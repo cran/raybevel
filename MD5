@@ -1,4 +1,4 @@
-8ffd4cac21c93eb9e7934bcdd045a4d4 *DESCRIPTION
+c25c84cf5fd46afd1b56f9d63dff93c8 *DESCRIPTION
 3acb7a97c6dc25627729b698d48fb5cc *NAMESPACE
 730f2a69661b255c27c188a72e0663b2 *R/RcppExports.R
 1fe36750ee26824ea61a106796a23ef7 *R/arrange_base.R
@@ -58,10 +58,10 @@ d6c0d56796bae5e4e5406159a3932f5e *man/swap_yz.Rd
 ff5f39d83c4355532f6226104a0d728a *man/unit_vector.Rd
 b1cb62f4bdb362cc409df157be2c731e *src/Makevars
 6580529474050f7cb97694f745ce05e1 *src/RcppExports.cpp
-0dde5209f2840f14b762131b254878dc *src/convert_ss_to_polygons_rcpp.cpp
-c42290b0f385a2a1886c14497db186f2 *src/generate_offset_links_nodes_rcpp.cpp
+7a32b1952cbdf5377bbadc00d126e9ef *src/convert_ss_to_polygons_rcpp.cpp
+2228a6943480136fa1b3d42adbed84b3 *src/generate_offset_links_nodes_rcpp.cpp
 d8e0640b0edf0e3888a6a3e3b3eecad8 *src/math.cpp
 ce9209e3bb3e9e1ae604edd77b12914d *src/math.h
 cd636322c5b585776d8fa4fc9d14a3cc *src/print.h
 cfbea8d4e5c4023fed7a8426e5e8bbb7 *src/raydebug.h
-09046ba0ff6f97dbf1165997c9c3b187 *src/rayskeleton.cpp
+6334ce9573af616c73f2f076b75e4bdb *src/rayskeleton.cpp
