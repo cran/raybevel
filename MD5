@@ -1,4 +1,4 @@
-c25c84cf5fd46afd1b56f9d63dff93c8 *DESCRIPTION
+78f19c101f9545a3a0d91ef80de5787d *DESCRIPTION
 3acb7a97c6dc25627729b698d48fb5cc *NAMESPACE
 730f2a69661b255c27c188a72e0663b2 *R/RcppExports.R
 1fe36750ee26824ea61a106796a23ef7 *R/arrange_base.R
@@ -8,13 +8,13 @@ c5f25f04487176f02bf4456965ed35d8 *R/extrude_polygon.R
 5de0823099e02dbd194725f68c16f3b5 *R/generate_bevel.R
 ecdb9d2a0eab4dea85f0e12252f577d0 *R/generate_offset_links_nodes.R
 76d1a307a584ddba6171ad6aefb4b608 *R/generate_offset_polygon.R
-9205cf34b0be8a760906f6fa54cd8d38 *R/generate_roof.R
+22c78e59e4dedf8dd480bef419a0b683 *R/generate_roof.R
 de354549c1b8ecaef324f04b6aa69777 *R/identify_maxima_nodes.R
 369f0f9f97f1836e0dda7efba6c337cd *R/math-functions.R
 44a2be10d615900d762eb559d4f99010 *R/merge_nodes_within_tolerance.R
 c0ffb2af405c51520abdfa54f1d195af *R/modify_bevel_with_skeleton.R
 e9c2ffb0b72a72795525cb60f7fedef1 *R/plot_offset_polygon.R
-7784052c9407181d55f92fb6fb73d8d8 *R/plot_skeleton.R
+0a00b79f5b5537d8bfd5271ba67b9426 *R/plot_skeleton.R
 a6daeeeb3905a3d1cb44d30b45246b09 *R/rayvertexcpp.R
 55d311ca222ac3fd9f37e025d19c18f7 *R/recalculate_ordered_ids.R
 91b52f122c873dd412ce1a3f76d11c31 *R/remove_node_duplicates.R
@@ -37,7 +37,7 @@ dbf47b90c197ad71f826b1d12b4825f8 *man/generate_bevel.Rd
 e8febbc6fc1f2ad93fb42a94fe669805 *man/generate_complex_bevel.Rd
 49c0c4a651f5f31598565fda01151c25 *man/generate_offset_links_nodes.Rd
 e3f08efe67ab370ecc18153d80efb997 *man/generate_offset_polygon.Rd
-8f33596a822e2f1f2214ddf8ecaddf54 *man/generate_roof.Rd
+726d2ce86f799b928e9e9628b531dd50 *man/generate_roof.Rd
 140e7ea95c6cc239fc6ecd7aeb922cf5 *man/get_time.Rd
 21c113aaeec237d5162dc3b5763a501a *man/identify_maxima_nodes.Rd
 1158fd2c206b49c7afd23decabd18203 *man/init_time.Rd
@@ -46,7 +46,7 @@ ae52d63cbc49324b6e4a5211b6beed49 *man/interpolate_location.Rd
 4f551bacb1174707a153022b750121a6 *man/make_incremental_nodes.Rd
 fbb14e3a5cec7788983f6abbef1647bf *man/modify_bevel_with_skeleton.Rd
 84f4e25092c9170a550f52491cc6b80d *man/plot_offset_polygon.Rd
-3608b8a3c6c788b3d8e2fd6ae14569c1 *man/plot_skeleton.Rd
+71079d427be4e530f317b9ae291afa8d *man/plot_skeleton.Rd
 f2f1474846da83c5ee58ae8ff772e16d *man/print_time.Rd
 f9816f1be58ff1421f27dbf6d44767a0 *man/process_sliced_links.Rd
 7f9a6c7023459516b556f1d521fa92f1 *man/recalculate_ordered_ids.Rd
@@ -64,4 +64,4 @@ d8e0640b0edf0e3888a6a3e3b3eecad8 *src/math.cpp
 ce9209e3bb3e9e1ae604edd77b12914d *src/math.h
 cd636322c5b585776d8fa4fc9d14a3cc *src/print.h
 cfbea8d4e5c4023fed7a8426e5e8bbb7 *src/raydebug.h
-6334ce9573af616c73f2f076b75e4bdb *src/rayskeleton.cpp
+68f48ec634e46e9185447757636241ef *src/rayskeleton.cpp
