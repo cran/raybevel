@@ -3,6 +3,7 @@
 #include <cmath>
 #include <algorithm>
 #include <RProgress.h>
+
 #include "RcppThread.h"
 #include "math.h"
 #include <iostream>

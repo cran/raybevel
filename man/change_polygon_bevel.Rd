@@ -78,7 +78,7 @@ pre-existing polygons generated from the `generate_beveled_polygon` function whe
 # Skeletonize a complex {sf} object and set return_skeleton_polygons = TRUE in
 # generate_beveled_polygon(). This returns skeleton object with polygons included, which
 # allows for quickly generating 3D models with different bevels.
-if(run_documentation()) {
+if(run_docs_raybevel()) {
   library(rayrender)
   library(rayvertex)
   us_states = spData::us_states
@@ -104,23 +104,23 @@ if(run_documentation()) {
   raymesh_model(bevel_new, y=0.5, override_material = TRUE,
                 material = diffuse(color="purple")) |>
     add_object(scene_base) |>
-    render_scene(lookfrom=c(0,30,-10), sample_method = "sobol_blue",clamp_value = 10,
+    render_scene(lookfrom=c(0,30,-10), samples=16,
                  width=800,height=800,fov=0,ortho_dimensions=c(12,12))
 }
 # Change to a smooth bevel
-if(run_documentation()) {
+if(run_docs_raybevel()) {
   new_bevel = generate_bevel("circular", bevel_start = 0, bevel_end=1)
   bevel_new = change_polygon_bevel(bevel_model_cali,
                                    bevel_offsets = new_bevel, solid ) |>
     center_mesh()
   raymesh_model(bevel_new, override_material = TRUE, y=1,material = diffuse(color="purple")) |>
     add_object(scene_base) |>
-    render_scene(lookfrom=c(0,30,-10), sample_method = "sobol_blue",clamp_value = 10,
+    render_scene(lookfrom=c(0,30,-10), samples=16,
                  width=800,height=800,fov=0,ortho_dimensions=c(12,12))
 }
 
 # Make a complex bevel
-if(run_documentation()) {
+if(run_docs_raybevel()) {
   complex_coords = generate_complex_bevel(
     bevel_type  = c("angled","flat", "angled", "flat"),
     bevel_start = head(seq(0,1,by=0.05),-1),
@@ -135,12 +135,12 @@ if(run_documentation()) {
     center_mesh()
   raymesh_model(bevel_new, override_material = TRUE, y=1,material = diffuse(color="purple")) |>
     add_object(scene_base) |>
-    render_scene(lookfrom=c(0,30,-20), sample_method = "sobol_blue",clamp_value = 10,
+    render_scene(lookfrom=c(0,30,-20), samples=16,
                  width=800,height=800,fov=0,ortho_dimensions=c(12,12))
 }
 
 # Quickly generate new bevels to inflate California like a balloon using the arctan function.
-if(run_documentation()) {
+if(run_docs_raybevel()) {
   inflate_california = function(magnitudes) {
   for(val in magnitudes) {
     bevel_new = change_polygon_bevel(bevel_model_cali,
@@ -153,8 +153,7 @@ if(run_documentation()) {
       add_object(scene_base) |>
       add_object(sphere(x=-30,z=30,y=18,radius=30,material=light(color="white", intensity=5))) |>
       render_scene(lookfrom=c(-1, 28, -20.32), lookat=c(-1, 1.46, -2),
-                   sample_method = "sobol_blue", clamp_value = 10,
-                   width=800,height=800,fov=20,samples=256)
+                   samples=16, width=800, height=800, fov=20)
     }
   }
   inflate_california(c(1,4,16,64))
